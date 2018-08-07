@@ -1,0 +1,21 @@
+$color-primary: #232323;
+$color-secondary: #0FADBD;
+$color-tertiary: #0F636F; // #468966 
+$color-light: #F8F8F8;
+$color-dark: #445878;
+$color-darker: #31353D;
+$color-blue1: #74bbe7;
+$color-blue2: #5faedf;
+$color-blue3: #0b75bb;
+$color-blue4: #065a92;
+$color-blue5: #003454;
+$color-red1: #e6204c;
+$color-red2: #e61f4b;
+$color-purple: #86318f;
+$color-grey1: #f6f6f6;
+$color-grey2: #f0f0f0;
+$color-grey3: #464646;
+
+@mixin shadow() {
+    box-shadow: 3px 3px 10px 0 rgba($color: #000000, $alpha: 0.3);
+}

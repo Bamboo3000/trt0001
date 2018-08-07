@@ -1,0 +1,17 @@
+/.phpintel/
+/prototype/node_modules
+/prototype/.sass-cache
+!/.gitignore
+/design
+.DS_Store
+/build/composer.lock
+/build/*
+!/build/themes
+!/build/plugins/honest
+!/build/plugins/honest/*
+/build/themes/honest/content
+/build/themes/honest/content/*
+/build/themes/honest/meta
+/build/themes/honest/meta/*
+/.DS_Store
+**/.DS_Store
