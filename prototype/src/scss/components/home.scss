@@ -9,4 +9,40 @@
         padding: 40px;
     }
 
+    &__references {
+
+        &-title {
+            margin-bottom: 60px;
+        }
+
+        hr {
+            background-color: $color-grey1;
+            margin: 20px auto 40px;
+        }
+
+        &-item {
+            display: flex;
+            flex-wrap: nowrap;
+            padding: 15px;
+
+            .logo {
+                flex-basis: 30%;
+                max-width: 30%;
+            }
+
+            .text {
+                flex-basis: 70%;
+                max-width: 70%;
+                padding-left: 40px;
+
+                .body-text {
+                    margin-top: 0;
+                }
+
+            }
+
+        }
+
+    }
+
 }
