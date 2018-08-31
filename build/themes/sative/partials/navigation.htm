@@ -1,0 +1,33 @@
+<div class="container__nav">
+    <a href="{{ url('/') }}" class="logo">
+        <object type="image/svg+xml" data="{{ 'assets/img/003-owl.svg'|theme }}">
+            <img src="{{ 'assets/img/003-owl.svg'|theme }}" alt="Training Retail logo">
+        </object>
+    </a>
+    <nav class="navigation__menu">
+        {% partial 'menu-items' items=mainMenu.menuItems %}
+        <div class="lang">
+            <a href="#" {{ activeLocale == 'nl' ? 'class="active"' : null }} data-request="onSwitchLocale" data-request-data="locale: 'nl'" title="Dutch">NL</a>
+            <span>|</span>
+            <a href="#" {{ activeLocale == 'en' ? 'class="active"' : null }} data-request="onSwitchLocale" data-request-data="locale: 'en'" title="English">EN</a>
+        </div>
+        <div class="share">
+            <a href="" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" target="_blank">
+                <i class="fab fa-google-plus-g"></i>
+            </a>
+            <span>
+                Training Retail &copy; {{ "now"|date("Y") }}<br/>
+                Design by <a href="https://www.sative.co.uk" target="_blank"><u>Sative</u></a>
+            </span>
+        </div>
+    </nav>
+</div>

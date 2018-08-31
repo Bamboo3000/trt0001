@@ -1,0 +1,13 @@
+name: 'Main Menu'
+items:
+    -
+        title: 'Training Retail'
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: index
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
