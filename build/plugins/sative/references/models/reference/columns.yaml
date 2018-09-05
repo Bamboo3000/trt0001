@@ -1,0 +1,13 @@
+columns:
+    id:
+        label: id
+        type: number
+    summary:
+        label: summary
+        type: text
+    author:
+        label: author
+        type: text
+    featured:
+        label: featured
+        type: text

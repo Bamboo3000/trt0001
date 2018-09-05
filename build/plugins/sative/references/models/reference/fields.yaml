@@ -1,0 +1,21 @@
+fields:
+    img:
+        label: Logo
+        mode: image
+        span: full
+        type: mediafinder
+    author:
+        label: Author
+        span: full
+        required: 1
+        type: text
+    summary:
+        label: 'Reference text'
+        size: huge
+        span: full
+        required: 1
+        type: textarea
+    featured:
+        label: 'Show on homepage?'
+        span: auto
+        type: switch

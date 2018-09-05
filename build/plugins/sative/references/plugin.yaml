@@ -1,0 +1,11 @@
+plugin:
+    name: 'sative.references::lang.plugin.name'
+    description: 'sative.references::lang.plugin.description'
+    author: Sative
+    icon: oc-icon-comments-o
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: References
+        url: sative/references/references
+        icon: icon-comments-o

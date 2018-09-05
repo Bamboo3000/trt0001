@@ -1,0 +1,4 @@
+title: References
+modelClass: Sative\References\Models\Reference
+toolbar:
+    buttons: reorder_toolbar
