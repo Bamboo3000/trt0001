@@ -8,7 +8,23 @@ code = "main-menu"
 [localePicker]
 forceUrl = 1
 
+[builderList referenceListing]
+modelClass = "Sative\References\Models\Reference"
+scope = "-"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+
 ==
+{% set records = referenceListing.records %}
+{% set displayColumn = referenceListing.displayColumn %}
+{% set noRecordsMessage = referenceListing.noRecordsMessage %}
+{% set detailsPage = referenceListing.detailsPage %}
+{% set detailsKeyColumn = referenceListing.detailsKeyColumn %}
+{% set detailsUrlParameter = referenceListing.detailsUrlParameter %}
+
 {variable name="headerVid" label="Header Video" tab="Header" type="text"}{/variable}
 {variable name="headerTitle" label="Header Title" tab="Header" type="text"}{/variable}
 {variable name="headerSubTitle" label="Header Sub-title" tab="Header" type="text"}{/variable}
@@ -66,5 +82,35 @@ forceUrl = 1
     {% endfor %}
 
 {% endif %}
+
+<hr>
+<section class="home__references">
+    <div class="home__references-title">
+        <h2 class="text-size-xxxxlarge">
+            {{ 'Referenties van onze klanten'|_ }}
+        </h2>
+        <h3 class="text-right">{{ 'wat anderen over ons zeggen'|_ }}</h3>
+    </div>
+    
+    {% for record in records if record.featured == 1 %}
+
+        <hr>
+        <div class="home__references-item">
+            <div class="logo">
+                <img src="{{ record.img|media }}" alt="">
+            </div>
+            <div class="text">
+                <p class="body-text">
+                    {{ record.summary }}
+                </p>
+                <p class="text-right text-size-xlarge">
+                    {{ record.author }}
+                </p>
+            </div>
+        </div>
+
+    {% endfor %}
+
+</section>
 
 {% partial 'footer' %}

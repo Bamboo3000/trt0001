@@ -7,11 +7,11 @@
 /build/composer.lock
 /build/*
 !/build/themes
-!/build/plugins/honest
-!/build/plugins/honest/*
-/build/themes/honest/content
-/build/themes/honest/content/*
-/build/themes/honest/meta
-/build/themes/honest/meta/*
+!/build/plugins/sative
+!/build/plugins/sative/*
+/build/themes/sative/content
+/build/themes/sative/content/*
+/build/themes/sative/meta
+/build/themes/sative/meta/*
 /.DS_Store
 **/.DS_Store
