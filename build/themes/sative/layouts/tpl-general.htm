@@ -1,0 +1,48 @@
+description = "General page"
+
+[staticMenu mainMenu]
+code = "main-menu"
+
+[staticPage]
+
+[localePicker]
+forceUrl = 1
+
+==
+{repeater name="contents" prompt="Add content section" tab="Contents"}
+  {variable type="mediafinder" name="image" label="Image" type="mediafinder" mode="image"}{/variable}
+  {variable type="text" name="title" label="title"}{/variable}
+  {variable type="richeditor" name="text" label="text"}{/variable}
+{/repeater}
+
+
+{% partial 'head' %}
+
+{% if contents %}
+
+    {% for fields in contents %}
+
+        {% if fields.image %}
+            <img src="{{ fields.image|media }}" alt="">
+        {% endif %}
+
+        {% if fields.title or fields.text %}
+            <section class="home__intro">
+            {% if fields.title %}
+                <h2>
+                    {{ fields.title }}
+                </h2>
+            {% endif %}
+            {% if fields.text %}
+                <div class="body-text">
+                    {{ fields.text|raw }}
+                </div>
+            {% endif %}
+            </section>
+        {% endif %}
+
+    {% endfor %}
+
+{% endif %}
+
+{% partial 'footer' %}
