@@ -15,7 +15,7 @@
     
         &__menu {
     
-            ul {
+            > ul {
                 padding: 0;
                 width: auto;
                 margin: 50px auto 40px;
@@ -23,9 +23,10 @@
                 display: block;
                 text-align: right;
     
-                li {
+                > li {
+                    position: relative;
     
-                    a {
+                    > a {
                         display: block;
                         line-height: 1;
                         letter-spacing: 0.5px;
@@ -44,6 +45,13 @@
                             color: black;
                         }
     
+                    }
+
+                    .sub {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        background-color: $color-grey2;
                     }
     
                 }
