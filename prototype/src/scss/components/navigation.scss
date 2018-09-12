@@ -70,7 +70,8 @@
 
                         > li {
 
-                            &:hover {
+                            &:hover,
+                            &.active {
 
                                 > a {
                                     font-weight: 500;
