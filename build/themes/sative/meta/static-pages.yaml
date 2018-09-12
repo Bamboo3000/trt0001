@@ -1,2 +1,9 @@
 static-pages:
     index: {  }
+    trainingen:
+        trainingen-sales-training: {  }
+        trainingen-brand-training: {  }
+        trainingen-service-and-hospitality-training: {  }
+        trainingen-e-learning: {  }
+    referenties: {  }
+    contact: {  }

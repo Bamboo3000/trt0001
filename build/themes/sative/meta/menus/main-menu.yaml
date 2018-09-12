@@ -4,8 +4,98 @@ items:
         title: 'Training Retail'
         nesting: '0'
         type: static-page
+        url: ''
         code: ''
         reference: index
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Trainingen
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: trainingen
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: 'Sales Training'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: trainingen-sales-training
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Brand Training'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: trainingen-brand-training
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Service and Hospitality Training'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: trainingen-service-and-hospitality-training
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: E-Learning
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: trainingen-e-learning
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+    -
+        title: Referenties
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: referenties
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Contact
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: contact
         replace: '0'
         viewBag:
             isHidden: '0'

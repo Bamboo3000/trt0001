@@ -47,3 +47,17 @@ function slideTo(el)
 		scrollTop: $(el).offset().top
 	}, 500);
 }
+
+function subMenuToggle()
+{
+    $('.navigation__menu').find('> ul').find('> li').on('mouseenter', function() {
+        $(this).find('> .sub').stop(true, true).fadeIn(200);
+    });
+    $('.navigation__menu').find('> ul').find('> li').on('mouseleave', function() {
+        $(this).find('> .sub').stop(true, true).fadeOut(200);
+    });
+}
+
+$(document).ready(function() {
+    subMenuToggle();
+});
