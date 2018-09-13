@@ -2,21 +2,21 @@
                 <footer class="footer">
                     <div class="footer__item">
                         <p class="text-size-xlarge">
-                            Over mij
+                            {{ 'Over mij'|_ }}
                         </p>
                         <p class="text-size-small">
-                            Ik ben Judith Berger - van Tol, Retail Trainer. <br/>
-                            Cupiditate rem sequi, id impedit necessitatibus placeat voluptates! Facilis ducimus tenetur natus optio, harum.
+                            {{ 'Ik ben Judith Berger - van Tol, Retail Trainer.'|_ }}<br/>
+                            {{ 'Cupiditate rem sequi, id impedit necessitatibus placeat voluptates! Facilis ducimus tenetur natus optio, harum.'|_ }}
                         </p>
                     </div>
                     <div class="footer__item">
                         <p class="text-size-xlarge">
-                            Contact
+                            {{ 'Contact'|_ }}
                         </p>
                         <p class="text-size-small">
-                            Telefoon: <a href="">+31 6 15 138 999</a><br/>
-                            E-mail: <a href="">info@trainingretail.nl</a><br/>
-                            Locatie: Kleine Houtweg 109, 2012 CE Haarlem, Netherlands
+                            {{ 'Telefoon:'|_ }} <a href="tel:{{ '+31 6 15 138 999'|_ }}">{{ '+31 6 15 138 999'|_ }}</a><br/>
+                            {{ 'E-mail:'|_ }} <a href="mailto:{{ 'info@trainingretail.nl'|_ }}">{{ 'info@trainingretail.nl'|_ }}</a><br/>
+                            {{ 'Locatie: Kleine Houtweg 109, 2012 CE Haarlem, Netherlands'|_ }}
                         </p>
                     </div>
                 </footer>
