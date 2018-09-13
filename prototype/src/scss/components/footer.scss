@@ -4,6 +4,10 @@
     margin: -10px -15px -30px -15px;
     color: $color-grey3;
 
+    @media(max-width: 1140px) {
+        margin-top: -25px;
+    }
+
     &__item {
         flex-basis: 50%;
         max-width: 50%;

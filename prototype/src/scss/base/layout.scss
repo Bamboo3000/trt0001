@@ -101,6 +101,7 @@ hr {
 	margin: 0 auto;
 	padding: 0 30px;
 	display: block;
+	width: 100vw;
 	max-width: 1660px;
 
 	@media(max-width: 1660px) {
@@ -119,8 +120,18 @@ hr {
 		max-width: 960px;
 	}
 
+	@media(max-width: 1000px) {
+		max-width: 900px;
+		padding: 0 20px;
+	}
+
+	@media(max-width: 920px) {
+		max-width: 760px;
+	}
+
 	&__nav {
-		width: 400px;
+		width: 100%;
+		max-width: 400px;
 		height: 100%;
 		max-height: 100vh;
 		padding: 5vh 30px 5vh 0;
@@ -131,24 +142,35 @@ hr {
 		justify-content: center;
 
 		@media(max-width: 1660px) {
-			width: 360px;
+			max-width: 360px;
 		}
 
 		@media(max-width: 1500px) {
-			width: 320px;
+			max-width: 320px;
 		}
 
 		@media(max-width: 1340px) {
-			width: 270px;
+			max-width: 270px;
 		}
 
 		@media(max-width: 1140px) {
-			width: 240px;
+			max-width: 240px;
+		}
+
+		@media(max-width: 1000px) {
+			max-width: 220px;
+			padding-right: 20px;
+		}
+
+		@media(max-width: 920px) {
+			max-width: 200px;
 		}
 
 	}
 
 	&__content {
+		position: relative;
+		display: block;
 		width: 100%;
 		max-width: 1200px;
 		margin-left: 400px;
@@ -171,7 +193,18 @@ hr {
 
 		@media(max-width: 1140px) {
 			max-width: 720px;
-			margin-left: 240px;
+			margin-left: 210px;
+		}
+
+		@media(max-width: 1000px) {
+			max-width: 660px;
+			margin-left: 200px;
+			padding: 40px 0 40px 20px;
+		}
+
+		@media(max-width: 920px) {
+			max-width: 520px;
+			margin-left: 200px;
 		}
 
 	}

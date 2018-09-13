@@ -4,11 +4,16 @@
     .logo {
         text-align: right;
         padding-right: 20px;
-        
+
         object,
         svg {
             max-width: 70px;
             display: inline-block;
+
+            @media(max-width: 1140px) {
+                max-width: 60px;
+            }
+
         }
 
     }
@@ -24,6 +29,10 @@
                 list-style: none;
                 display: block;
                 text-align: right;
+
+                @media(max-width: 1140px) {
+                    margin: 35px auto 30px;
+                }
     
                 > li {
                     position: relative;
@@ -38,6 +47,12 @@
                         color: $color-grey2;
                         font-family: $font-tertiary;
                         transition: 200ms all ease;
+
+                        @media(max-width: 1140px) {
+                            padding: 8px 20px;
+                            font-size: 19px;
+                        }
+
                     }
     
                     &:hover,
@@ -48,14 +63,6 @@
                         }
     
                     }
-
-                    // &:hover {
-
-                    //     .sub {
-                    //         display: block!important;
-                    //     }
-
-                    // }
 
                     .sub {
                         position: absolute;
@@ -68,6 +75,10 @@
                         z-index: 9999999999999999999999999;
                         background-color: $color-grey2;
                         display: none;
+
+                        @media(max-width: 1140px) {
+                            padding: 12px 15px;
+                        }
 
                         > li {
 
@@ -127,6 +138,11 @@
                     font-size: 20px;
                     margin-left: 8px;
                     transition: 200ms all ease;
+
+                    @media(max-width: 1140px) {
+                        font-size: 18px;
+                        margin-left: 6px;
+                    }
 
                     &:hover {
                         color: black;
