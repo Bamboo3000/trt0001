@@ -129,6 +129,14 @@ hr {
 		max-width: 760px;
 	}
 
+	@media(max-width: 760px) {
+		padding: 0 15px;
+	}
+
+	@media(max-width: 480px) {
+		padding: 0 10px;
+	}
+
 	&__nav {
 		width: 100%;
 		max-width: 400px;
@@ -140,6 +148,8 @@ hr {
 		flex-wrap: nowrap;
 		flex-direction: column;
 		justify-content: center;
+		background-color: white;
+		transition: all 250ms ease;
 
 		@media(max-width: 1660px) {
 			max-width: 360px;
@@ -166,6 +176,84 @@ hr {
 			max-width: 200px;
 		}
 
+		@media(orientation: portrait) {
+			transform: translateX(-120%);
+
+			&.active {
+				transform: translateX(0);
+			}
+
+		}
+
+		&-mobile {
+			position: fixed;
+			padding: 10px 1vw;
+			top: 0;
+			width: 92vw;
+			left: 50%;
+			text-align: center;
+			background-color: white;
+			z-index: 99999;
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+			align-items: center;
+			transform: translateY(-120%) translateX(-46vw);
+			transition: all 250ms ease;
+
+			@media(orientation: portrait) {
+				transform: translateY(0) translateX(-46vw);
+
+				&.hide {
+					transform: translateY(-120%) translateX(-46vw);
+				}
+				
+				@media(max-width: 480px) {
+					width: 100vw;
+					padding: 10px;
+					transform: translateY(0) translateX(-50vw);
+
+					&.hide {
+						transform: translateY(-120%) translateX(-50vw);
+					}
+
+				}
+
+			}
+
+			.menu-open {
+				font-size: 21px;
+				cursor: pointer;
+			}
+
+			.logo {
+				margin: 0 auto;
+				vertical-align: middle;
+				text-align: center;
+				min-width: 200px;
+
+				span {
+					display: inline-block;
+					line-height: 1.1;
+					font-size: 16px;
+					font-weight: 600;
+					font-family: $font-tertiary;
+					vertical-align: middle;
+					letter-spacing: 0.5px;
+				}
+
+				object,
+				svg {
+					max-width: 33px;
+					max-height: 50px;
+					display: inline-block;
+					margin: 0 10px;
+				}
+
+			}
+
+		}
+
 	}
 
 	&__content {
@@ -175,6 +263,7 @@ hr {
 		max-width: 1200px;
 		margin-left: 400px;
 		padding: 60px 0 60px 30px;
+		transition: all 250ms ease;
 
 		@media(max-width: 1660px) {
 			max-width: 1080px;
@@ -207,8 +296,30 @@ hr {
 			margin-left: 200px;
 		}
 
+		@media(orientation: portrait) {
+			margin: 0 auto;
+			max-width: 90vw;
+			padding-left: 0;
+
+			@media(max-width: 480px) {
+				max-width: 100vw;
+			}
+
+		}
+
 	}
 
+}
+
+.fadeincont {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 30px;
+	background-color: rgba(#000000, 0.66);
+	z-index: 99;
 }
 
 .bg-cover {
