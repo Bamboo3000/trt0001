@@ -123,7 +123,10 @@
                         > li {
 
                             > a {
-                                padding: 5px 0;
+                                padding: 4px 0;
+                                display: block;
+                                font-weight: 300;
+                                line-height: 1;
                             }
 
                             &:hover,
