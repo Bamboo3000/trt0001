@@ -86,21 +86,45 @@
 
                     .sub {
                         position: absolute;
-                        width: 240px;
-                        right: -240px;
-                        top: 0;
-                        padding: 15px;
+                        width: 200px;
+                        right: -200px;
+                        top: -3px;
+                        padding: 12px 15px;
                         text-align: left;
                         font-size: 16px;
                         z-index: 9999999999999999999999999;
-                        background-color: $color-grey2;
+                        background-color: white;
+                        border: 2px solid black;
                         display: none;
 
-                        @media(max-width: 1140px) {
-                            padding: 12px 15px;
+                        &:before,
+                        &:after {
+                            position: absolute;
+                            top: 13px;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            content: '';
+                            display: block;
+                        }
+
+                        &:before {
+                            left: -20px;
+                            border-width: 10px;
+                            border-color: transparent black transparent transparent ;
+                        }
+
+                        &:after {
+                            border-width: 10px;
+                            left: -17.5px;
+                            border-color: transparent white transparent transparent;
                         }
 
                         > li {
+
+                            > a {
+                                padding: 5px 0;
+                            }
 
                             &:hover,
                             &.active {
