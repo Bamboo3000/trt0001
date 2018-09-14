@@ -197,7 +197,7 @@ hr {
 			max-width: 150px;
 		}
 
-		@media(orientation: portrait), (max-height: 500px) {
+		@media(orientation: portrait), (max-height: 500px), (max-width: 760px) {
 			transform: translateX(-150%);
 
 			&.active {
@@ -222,7 +222,19 @@ hr {
 			transform: translateY(-120%) translateX(-46vw);
 			transition: all 250ms ease;
 
-			@media(orientation: portrait), (max-height: 500px) {
+			&:before {
+				content: '';
+				display: block;
+				position: fixed;
+				top: 0;
+				left: -50vw;
+				width: 200vw;
+				height: 69px;
+				background-color: white;
+				z-index: -1;
+			}
+
+			@media(orientation: portrait), (max-height: 500px), (max-width: 760px) {
 				transform: translateY(0) translateX(-46vw);
 
 				&.hide {
@@ -345,7 +357,7 @@ hr {
 			margin-left: 200px;
 		}
 
-		@media(orientation: portrait), (max-height: 500px) {
+		@media(orientation: portrait), (max-height: 500px), (max-width: 760px) {
 			margin: 0 auto;
 			max-width: 90vw;
 			padding-left: 0;
