@@ -2,22 +2,103 @@
 
     &__header {
         margin-bottom: 40px;
+
+        @media(max-width: 1200px) {
+            margin-bottom: 35px;
+        }
+
+        @media(max-width: 1024px) {
+            margin-bottom: 30px;
+        }
+
+        @media(max-width: 800px) {
+            margin-bottom: 25px;
+        }
+
+        @media(max-width: 480px) {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin-top: 50px;
+
+            @media(max-width: 1200px) {
+                margin-top: 40px;
+            }
+        
+            @media(max-width: 1024px) {
+                margin-top: 30px;
+            }
+        
+            @media(max-width: 800px) {
+                margin-top: 25px;
+            }
+        
+            @media(max-width: 480px) {
+                margin-top: 20px;
+            }
+
+        }
+
     }
 
     &__intro {
         background-color: $color-grey1;
         padding: 40px;
+
+        @media(max-width: 1200px) {
+            padding: 30px;
+        }
+
+        @media(max-width: 1024px) {
+            padding: 25px;
+        }
+
+        @media(max-width: 800px) {
+            padding: 25px 20px;
+        }
+
+        @media(max-width: 480px) {
+            padding: 20px 15px;
+        }
+
     }
 
     &__references {
 
         &-title {
             margin-bottom: 60px;
+
+            @media(max-width: 1200px) {
+                margin-bottom: 50px;
+            }
+    
+            @media(max-width: 1024px) {
+                margin-bottom: 40px;
+            }
+    
+            @media(max-width: 800px) {
+                margin-bottom: 35px;
+            }
+    
+            @media(max-width: 480px) {
+                margin-bottom: 30px;
+            }
+
         }
 
         hr {
             background-color: $color-grey1;
             margin: 20px auto 40px;
+    
+            @media(max-width: 1024px) {
+                margin: 15px auto 30px;
+            }
+    
+            @media(max-width: 480px) {
+                margin: 10px auto 20px;
+            }
+
         }
 
         &-item {
@@ -25,15 +106,38 @@
             flex-wrap: nowrap;
             padding: 15px;
 
+            @media(max-width: 900px) {
+                flex-wrap: wrap;
+            }
+
             .logo {
                 flex-basis: 30%;
                 max-width: 30%;
+
+                @media(max-width: 900px) {
+                    flex-basis: 60%;
+                    max-width: 60%;
+                    margin-bottom: 30px;
+                }
+
+                @media(max-width: 480px) {
+                    flex-basis: 100%;
+                    max-width: 100%;
+                    margin-bottom: 20px;
+                }
+
             }
 
             .text {
                 flex-basis: 70%;
                 max-width: 70%;
                 padding-left: 40px;
+
+                @media(max-width: 900px) {
+                    flex-basis: 100%;
+                    max-width: 100%;
+                    padding-left: 0;
+                }
 
                 .body-text {
                     margin-top: 0;

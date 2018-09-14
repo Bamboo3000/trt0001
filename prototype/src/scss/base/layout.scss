@@ -88,6 +88,23 @@ hr {
 	display: inline-block;
 	position: relative;
 	background-color: black;
+
+	@media(max-width: 1200px) {
+		margin: 56px auto;
+	}
+
+	@media(max-width: 1024px) {
+		margin: 44px auto;
+	}
+
+	@media(max-width: 800px) {
+		margin: 36px auto;
+	}
+
+	@media(max-width: 480px) {
+		margin: 32px auto;
+	}
+
 }
 
 #wrapper {
@@ -436,6 +453,22 @@ hr {
 	height: 0; 
 	overflow: hidden; 
 	max-width: 100%; 
+
+	@media(max-width: 1200px) {
+		margin-bottom: 40px;
+	}
+
+	@media(max-width: 1024px) {
+		margin-bottom: 30px;
+	}
+
+	@media(max-width: 800px) {
+		margin-bottom: 25px;
+	}
+
+	@media(max-width: 480px) {
+		margin-bottom: 20px;
+	}
 
 	iframe,
 	object, 

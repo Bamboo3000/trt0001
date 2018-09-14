@@ -1,0 +1,27 @@
+.contact {
+
+    &__header {
+
+        h1 {
+            margin: 30px 0;
+        
+            @media(max-width: 1024px) {
+                margin: 25px 0;
+            }
+        
+            @media(max-width: 800px) {
+                margin: 20px 0;
+            }
+
+        }
+
+    }
+
+}
+
+#contact_map {
+    display: block;
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+}

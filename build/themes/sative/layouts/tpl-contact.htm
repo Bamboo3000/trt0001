@@ -23,11 +23,8 @@ forceUrl = 1
 
 {% partial 'head' %}
 
-{% if headerMapLat or headerMapLng or headerTitle or headerSubTitle %}
-    <header class="home__header">
-        {% if headerMapLat and headerMapLng %}
-            <div id="map"></div>
-        {% endif %}
+{% if headerTitle or headerSubTitle %}
+    <header class="contact__header">
         {% if headerTitle %}
             <h1>
                 {{ headerTitle }}
@@ -38,6 +35,7 @@ forceUrl = 1
                 {{ headerSubTitle }}
             </h3>
         {% endif %}
+        <div id="contact_map"></div>
     </header>
 {% endif %}
 
