@@ -25,6 +25,10 @@
         text-align: right;
         padding-right: 20px;
 
+        @media(max-height: 500px) {
+            display: none;
+        }
+
         object,
         svg {
             max-width: 70px;
@@ -55,6 +59,10 @@
                 @media(max-width: 1140px) {
                     margin: 35px auto 30px;
                 }
+
+                @media(max-height: 500px) {
+                    margin-top: 0;
+                }        
     
                 > li {
                     position: relative;

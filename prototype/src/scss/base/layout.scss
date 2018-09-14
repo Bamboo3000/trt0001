@@ -151,6 +151,18 @@ hr {
 		background-color: white;
 		transition: all 250ms ease;
 
+		&:before {
+			content: '';
+			display: block;
+			position: fixed;
+			left: -40%;
+			top: 0;
+			bottom: 0;
+			background-color: white;
+			width: 40%;
+			z-index: 9;
+		}
+
 		@media(max-width: 1660px) {
 			max-width: 360px;
 		}
@@ -185,8 +197,8 @@ hr {
 			max-width: 150px;
 		}
 
-		@media(orientation: portrait) {
-			transform: translateX(-120%);
+		@media(orientation: portrait), (max-height: 500px) {
+			transform: translateX(-150%);
 
 			&.active {
 				transform: translateX(0);
@@ -210,7 +222,7 @@ hr {
 			transform: translateY(-120%) translateX(-46vw);
 			transition: all 250ms ease;
 
-			@media(orientation: portrait) {
+			@media(orientation: portrait), (max-height: 500px) {
 				transform: translateY(0) translateX(-46vw);
 
 				&.hide {
@@ -333,7 +345,7 @@ hr {
 			margin-left: 200px;
 		}
 
-		@media(orientation: portrait) {
+		@media(orientation: portrait), (max-height: 500px) {
 			margin: 0 auto;
 			max-width: 90vw;
 			padding-left: 0;
@@ -355,7 +367,7 @@ hr {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	left: 30px;
+	left: 0;
 	background-color: rgba(#000000, 0.66);
 	z-index: 99;
 }
