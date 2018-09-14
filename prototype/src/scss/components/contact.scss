@@ -24,4 +24,13 @@
     position: relative;
     width: 100%;
     min-height: 500px;
+
+    @media(max-height: 640px) {
+        min-height: 400px;
+    }
+
+    @media(max-height: 500px) {
+        min-height: 360px;
+    }
+
 }
