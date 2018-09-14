@@ -176,6 +176,15 @@ hr {
 			max-width: 200px;
 		}
 
+		@media(max-width: 480px) {
+			max-width: 170px;
+			padding-right: 0;
+		}
+
+		@media(max-width: 359px) {
+			max-width: 150px;
+		}
+
 		@media(orientation: portrait) {
 			transform: translateX(-120%);
 
@@ -252,6 +261,34 @@ hr {
 
 			}
 
+			.lang {
+                text-align: right;
+                color: $color-grey2;
+                font-weight: 400;
+                font-size: 12px;
+                display: block;
+
+                span {
+                    margin: 0 3px;
+                    cursor: default;
+                }
+
+                a {
+                    transition: all 200ms ease;
+
+                    &:hover {
+                        color: black;
+                    }
+
+                }
+                
+                .active {
+                    font-weight: 700;
+                    color: black;
+                }
+
+            }
+
 		}
 
 	}
@@ -300,6 +337,7 @@ hr {
 			margin: 0 auto;
 			max-width: 90vw;
 			padding-left: 0;
+			padding-top: 70px;
 
 			@media(max-width: 480px) {
 				max-width: 100vw;
@@ -368,7 +406,7 @@ hr {
 }
 
 .embed-container { 
-	margin: 40px auto 50px;
+	margin: 0 auto 50px;
 	position: relative; 
 	padding-bottom: 56.25%; 
 	height: 0; 

@@ -123,6 +123,11 @@
 					</object>
 					<span>Retail</span>
 				</a>
+				<div class="lang">
+					<a href="#" {{ activeLocale == 'nl' ? 'class="active"' : null }} data-request="onSwitchLocale" data-request-data="locale: 'nl'" title="Dutch">NL</a>
+					<span>|</span>
+					<a href="#" {{ activeLocale == 'en' ? 'class="active"' : null }} data-request="onSwitchLocale" data-request-data="locale: 'en'" title="English">EN</a>
+				</div>
 			</div>
             {% partial 'navigation' %}
             <div class="container__content">

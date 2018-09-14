@@ -1,7 +1,7 @@
 .footer {
     display: flex;
     flex-wrap: nowrap;
-    margin: -10px -15px -30px -15px;
+    margin: -10px -30px -30px -30px;
     color: $color-grey3;
 
     @media(max-width: 1140px) {
@@ -11,7 +11,7 @@
     &__item {
         flex-basis: 50%;
         max-width: 50%;
-        padding: 0 15px 15px 15px;
+        padding: 0 30px 15px 30px;
 
         .text-size-small {
             line-height: 1.8;
