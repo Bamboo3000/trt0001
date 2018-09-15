@@ -5,12 +5,12 @@ code = "main-menu"
 
 [staticPage]
 
+[form]
+
 [localePicker]
 forceUrl = 1
 
 ==
-{variable name="headerMapLat" label="Header Map Latitude" tab="Header" type="text"}{/variable}
-{variable name="headerMapLng" label="Header Map Longitude" tab="Header" type="text"}{/variable}
 {variable name="headerTitle" label="Header Title" tab="Header" type="text"}{/variable}
 {variable name="headerSubTitle" label="Header Sub-title" tab="Header" type="text"}{/variable}
 
@@ -43,22 +43,14 @@ forceUrl = 1
 
     {% for fields in contents %}
 
-        {% if fields.image %}
-            <img src="{{ fields.image|media }}" alt="">
-        {% endif %}
-
         {% if fields.title or fields.text %}
-            <section class="home__intro">
-            {% if fields.title %}
-                <h2>
-                    {{ fields.title }}
-                </h2>
-            {% endif %}
+            <section class="home__intro contact">
             {% if fields.text %}
                 <div class="body-text">
                     {{ fields.text|raw }}
                 </div>
             {% endif %}
+            {% component 'form' %}
             </section>
         {% endif %}
 
