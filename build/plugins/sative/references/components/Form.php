@@ -35,9 +35,9 @@ class Form extends ComponentBase
 
         Mail::send('searchit.jobs::mail.message', $inputs, function($message){
 
-            $message->from('searchit@recruitment.com', 'Searchit VPS');
-            $message->to('info@searchitrecruitment.com', 'Admin Searchit');
-            $message->subject('Searchit Recruitment new job spec');
+            $message->from('web@trainingretail.nl', 'Training Retail Website');
+            $message->to('info@trainingretail.nl', 'Admin');
+            $message->subject('Training Retail new message');
 
         });
 
