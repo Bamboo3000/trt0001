@@ -301,7 +301,7 @@ function instafeed()
     instafetch.init({
         accessToken: '1208001461.1677ed0.60e2485b8e264f408c9e09a5b5b8ef9d',
         target: 'instafeed',
-        numOfPics: 15,
+        numOfPics: 12,
         caption: true
     });
     // var userFeed = new Instafeed({

@@ -170,12 +170,24 @@
             margin: 0 -5px;
 
             article {
-                flex-basis: calc(20% - 10px);
-                max-width: calc(20% - 10px);
+                flex-basis: calc(25% - 10px);
+                max-width: calc(25% - 10px);
                 height: 0;
                 margin: 5px;
-                padding-bottom: calc(20% - 10px);
+                padding-bottom: calc(25% - 10px);
                 overflow: hidden;
+
+                @media(max-width: 900px) {
+                    flex-basis: calc(33.3333% - 10px);
+                    max-width: calc(33.3333% - 10px);
+                    padding-bottom: calc(33.3333% - 10px);
+                }
+
+                @media(max-width: 420px) {
+                    flex-basis: calc(50% - 10px);
+                    max-width: calc(50% - 10px);
+                    padding-bottom: calc(50% - 10px);
+                }
 
                 figure {
                     margin: 0;
