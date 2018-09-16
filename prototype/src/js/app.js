@@ -302,6 +302,7 @@ function instafeed()
         get: 'tagged',
         tagName: 'awesome',
         clientId: 'c6f85add2e5f4b41a9e2af457244631e',
+        accessToken: '1208001461.1677ed0.60e2485b8e264f408c9e09a5b5b8ef9d',
         template: '<a href="{{link}}"><img src="{{image}}" /></a>',
         error: function(error) {
             console.log(error);
