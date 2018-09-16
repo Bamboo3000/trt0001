@@ -299,23 +299,11 @@ function initContactMap()
 function instafeed()
 {
     instafetch.init({
-        accessToken: '1208001461.1677ed0.60e2485b8e264f408c9e09a5b5b8ef9d',
+        accessToken: '3954768309.1677ed0.30788a5d18984b86b98b23a114a6cb4c',
         target: 'instafeed',
         numOfPics: 12,
         caption: true
     });
-    // var userFeed = new Instafeed({
-    //     get: 'user',
-    //     userId: '3954768309',
-    //     accessToken: '1208001461.1677ed0.60e2485b8e264f408c9e09a5b5b8ef9d',
-    //     clientId: 'c6f85add2e5f4b41a9e2af457244631e',
-    //     template: '<a href="{{link}}"><img src="{{image}}" /></a>',
-    //     error: function(error) {
-    //         console.log(error);
-    //     }
-    // });
-    // userFeed.run();
-
 }
 
 $(document).ready(function() {
