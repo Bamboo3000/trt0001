@@ -89,7 +89,7 @@ function initContactMap()
 {
 	var contact_map = document.getElementById('contact_map');
 	var map = new google.maps.Map(contact_map, {
-		center: {lat: 52.3711053, lng: 4.6331014},
+		center: {lat: 52.3214064, lng: 4.8788931},
 		zoom: 11,
 		scrollwheel: false,
 		draggable: true,
@@ -113,7 +113,7 @@ function initContactMap()
 	};
 	var marker = new google.maps.Marker({
 		map: map,
-		position: new google.maps.LatLng(52.3711053,4.6331014),
+		position: new google.maps.LatLng(52.3214064,4.8788931),
 		icon: image
 	});
 	// map.set('styles', 
