@@ -151,6 +151,19 @@
 
     &__instagram {
 
+        &-title {
+            margin-bottom: 30px;
+    
+            @media(max-width: 1024px) {
+                margin-bottom: 25px;
+            }
+    
+            @media(max-width: 480px) {
+                margin-bottom: 20px;
+            }
+
+        }
+
         #instafeed {
             display: flex;
             flex-wrap: wrap;
