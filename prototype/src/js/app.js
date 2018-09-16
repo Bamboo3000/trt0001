@@ -298,25 +298,24 @@ function initContactMap()
 
 function instafeed()
 {
-    var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'awesome',
-        clientId: 'c6f85add2e5f4b41a9e2af457244631e',
+    instafetch.init({
         accessToken: '1208001461.1677ed0.60e2485b8e264f408c9e09a5b5b8ef9d',
-        template: '<a href="{{link}}"><img src="{{image}}" /></a>',
-        error: function(error) {
-            console.log(error);
-        }
+        target: 'instafeed',
+        numOfPics: 15,
+        caption: true
     });
-    feed.run();
     // var userFeed = new Instafeed({
     //     get: 'user',
     //     userId: '3954768309',
-    //     accessToken: 'c6f85add2e5f4b41a9e2af457244631e',
+    //     accessToken: '1208001461.1677ed0.60e2485b8e264f408c9e09a5b5b8ef9d',
     //     clientId: 'c6f85add2e5f4b41a9e2af457244631e',
-    //     template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+    //     template: '<a href="{{link}}"><img src="{{image}}" /></a>',
+    //     error: function(error) {
+    //         console.log(error);
+    //     }
     // });
-    //userFeed.run();
+    // userFeed.run();
+
 }
 
 $(document).ready(function() {
