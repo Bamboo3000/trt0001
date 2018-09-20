@@ -298,17 +298,45 @@ function initContactMap()
 
 function instafeed()
 {
-    instafetch.init({
-        accessToken: '3954768309.1677ed0.30788a5d18984b86b98b23a114a6cb4c',
-        target: 'instafeed',
-        numOfPics: 12,
-        caption: true
-    });
+    if($('#instafeed').length !== 0) {
+        instafetch.init({
+            accessToken: '3954768309.1677ed0.30788a5d18984b86b98b23a114a6cb4c',
+            target: 'instafeed',
+            numOfPics: 12,
+            caption: true
+        });
+    }
 }
+
+function instafetcher()
+{
+    if($('#instafetcher').length !== 0) {
+        var $num = 32;
+        instafetch.init({
+            accessToken: '3954768309.1677ed0.30788a5d18984b86b98b23a114a6cb4c',
+            target: 'instafetcher',
+            numOfPics: $num,
+            caption: true
+        });
+        // $('#instafetcher').next('.load-more').on('click', function() {
+        //     $('#instafetcher').children().wrapAll( "<div class='hidden'></div>" );
+        //     $num = $num + 32;
+        //     instafetch.init({
+        //         accessToken: '3954768309.1677ed0.30788a5d18984b86b98b23a114a6cb4c',
+        //         target: 'instafetcher',
+        //         numOfPics: $num,
+        //         caption: true
+        //     });
+        //     $('#instafetcher').find('.hidden').fadeOut(200);
+        // });
+    }
+}
+
 
 $(document).ready(function() {
     subMenuToggle();
     mobileMenuOpen();
     mobileMenuClose();
     instafeed();
+    instafetcher();
 });

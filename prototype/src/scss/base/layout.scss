@@ -556,3 +556,45 @@ hr {
 	}
 
 }
+
+#instafetcher {
+	margin: 0;
+
+	article {
+		margin: 20px 0;
+		background-color: $color-grey1;
+		transition: all 200ms ease;
+		display: inline-block;
+		width: auto;
+		max-width: 600px;
+
+		&:hover {
+			opacity: 0.7;
+		}
+
+		figure {
+			margin: 0;
+			display: inline-block;
+
+			img {
+				object-fit: cover;
+				display: block;
+				max-width: 100%;
+				width: auto;
+			}
+
+		}
+
+		a > div {
+			padding: 20px;
+			display: inline-block;
+
+			p {
+				margin: 0;
+			}
+			
+		}
+
+	}
+
+}

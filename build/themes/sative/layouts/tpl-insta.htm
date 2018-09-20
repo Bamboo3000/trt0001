@@ -1,0 +1,29 @@
+description = "Insta page"
+
+[staticMenu mainMenu]
+code = "main-menu"
+
+[staticPage]
+
+[localePicker]
+forceUrl = 1
+
+==
+
+
+{% partial 'head' %}
+
+<section class="home__instagram">
+    <div class="home__instagram-title">
+        <h2 class="text-size-xxxxlarge">
+            {{ 'Instagram'|_ }}
+        </h2>
+        {#<h3>{{ "Let's socialize"|_ }}</h3>#}
+    </div>
+    <div id="instafetcher"></div>
+    {#<div class="btn btn__default load-more">
+        {{ 'Load more'|_ }}
+    </div>#}
+</section>
+
+{% partial 'footer' %}

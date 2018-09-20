@@ -17,29 +17,25 @@
 	}
 
 	&__default {
-		text-align: center;
-		font-size: 58px;
-		font-weight: 700;
+		width: auto;
+		margin: 10px auto 0;
+		display: inline-block;
+		padding: 16px 40px!important;
+		height: auto!important;
+		border: 2px solid black;
+		font-size: 16px;
+		font-weight: 600;
+		letter-spacing: 0.5px;
 		line-height: 1;
-		text-decoration: none;
-		padding: 40px 60px 30px;
-		color: white;
-		background-color: $color-red2;
-		text-transform: uppercase;
+		color: black;
+		cursor: pointer;
+		background-color: white;
+		transition: all 250ms ease;
 
-		@media(max-width: 1200px) {
-			font-size: 40px;
-			padding: 28px 40px 25px;
+		&:hover {
+			background-color: black;
+			color: white;
 		}
-		
-		@media(max-width: 767px) {
-			font-size: 29px;
-			padding: 20px 40px 17px;
-		}
-
-		// &:hover {
-		// 	color: $color-light;
-		// }
 
 	}
 
