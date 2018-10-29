@@ -62,6 +62,17 @@
             padding: 20px 15px;
         }
 
+        ul {
+            padding: 1em 0 1em 32px;
+            margin: auto;
+            list-style: circle;
+        
+            li {
+                line-height: inherit;
+            }
+        
+        }
+
     }
 
     &__references {
