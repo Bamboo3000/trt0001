@@ -39,7 +39,7 @@ class Form extends ComponentBase
             Mail::send('sative.references::mail.message', $inputs, function($message){
 
                 $message->from('web@trainingretail.nl', 'Training Retail Website');
-                $message->to('office@sative.co.uk', 'Admin');
+                $message->to('info@trainingretail.nl', 'Admin');
                 $message->subject('Training Retail new message');
     
             });

@@ -1,9 +1,9 @@
-{{ form_open({ enctype: 'multipart/form-data', method: 'POST', files: 'true', request: 'onFormSubmit',  }) }}
+{{ form_open({ enctype: 'multipart/form-data', method: 'POST', request: 'onFormSubmit',  }) }}
     {% flash success %}
         <p
             data-control="flash-message"
             class="flash-message fade info"
-            data-interval="10">
+            data-interval="30">
             {{ 'Message sent!'|_ }}
         </p>
     {% endflash %}
