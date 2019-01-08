@@ -94,7 +94,7 @@
                     &.active {
                         
                         a {
-                            color: black;
+                            color: $color-tertiary;
                         }
     
                     }
@@ -109,7 +109,7 @@
                         font-size: 16px;
                         z-index: 9999999999999999999999999;
                         background-color: white;
-                        border: 2px solid black;
+                        border: 2px solid $color-tertiary;
                         display: none;
 
                         @media(max-width: 380px) {
@@ -137,7 +137,7 @@
                         &:before {
                             left: -20px;
                             border-width: 10px;
-                            border-color: transparent black transparent transparent ;
+                            border-color: transparent $color-tertiary transparent transparent ;
                         }
 
                         &:after {
@@ -153,6 +153,7 @@
                                 display: block;
                                 font-weight: 300;
                                 line-height: 1;
+                                color: black;
                             }
 
                             &:hover,
@@ -160,6 +161,7 @@
 
                                 > a {
                                     font-weight: 500;
+                                    color: $color-tertiary;
                                 }
 
                             }
@@ -190,7 +192,7 @@
                     transition: all 200ms ease;
 
                     &:hover {
-                        color: black;
+                        color: $color-tertiary;
                     }
 
                 }
@@ -218,7 +220,7 @@
                     }
 
                     &:hover {
-                        color: black;
+                        color: $color-tertiary;
                     }
 
                 }
@@ -232,7 +234,7 @@
                     display: block;
 
                     a:hover {
-                        color: black;
+                        color: $color-tertiary;
                     }
 
                 }

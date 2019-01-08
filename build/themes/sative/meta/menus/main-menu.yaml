@@ -28,7 +28,18 @@ items:
             isExternal: '0'
         items:
             -
-                title: 'Sales Training'
+                title: 'Onze werkwijze'
+                nesting: '0'
+                type: static-page
+                code: ''
+                reference: trainingen-onze-werkwijze
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Retail Training'
                 nesting: '0'
                 type: static-page
                 url: ''
@@ -41,7 +52,7 @@ items:
                     cssClass: ''
                     isExternal: '0'
             -
-                title: 'Brand Training'
+                title: 'Hospitality Training'
                 nesting: '0'
                 type: static-page
                 url: ''
@@ -54,7 +65,7 @@ items:
                     cssClass: ''
                     isExternal: '0'
             -
-                title: 'Service and Hospitality Training'
+                title: 'Leadership and Management Training'
                 nesting: '0'
                 type: static-page
                 url: ''
@@ -66,25 +77,27 @@ items:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
-            -
-                title: E-Learning
-                nesting: '0'
-                type: static-page
-                url: ''
-                code: ''
-                reference: trainingen-e-learning
-                cmsPage: ''
-                replace: '0'
-                viewBag:
-                    isHidden: '0'
-                    cssClass: ''
-                    isExternal: '0'
     -
         title: Referenties
         nesting: '0'
         type: static-page
+        url: ''
         code: ''
         reference: referenties
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Instagram
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: instagram
+        cmsPage: ''
         replace: '0'
         viewBag:
             isHidden: '0'
@@ -94,8 +107,10 @@ items:
         title: Contact
         nesting: '0'
         type: static-page
+        url: ''
         code: ''
         reference: contact
+        cmsPage: ''
         replace: '0'
         viewBag:
             isHidden: '0'
