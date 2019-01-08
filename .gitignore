@@ -1,3 +1,7 @@
+!/.gitignore
+!/build/themes
+!/build/plugins/sative
+!/build/plugins/sative/*
 /.phpintel/
 /prototype/node_modules
 /prototype/.sass-cache
@@ -11,7 +15,3 @@
 /build/themes/sative/meta/*
 /.DS_Store
 **/.DS_Store
-!/.gitignore
-!/build/themes
-!/build/plugins/sative
-!/build/plugins/sative/*
