@@ -43,7 +43,8 @@
     }
 
     &__intro {
-        background-color: $color-grey0;
+        background-color: $color-sea1;
+        color: $color-grey!important;
         padding: 40px;
 
         @media(max-width: 1200px) {
