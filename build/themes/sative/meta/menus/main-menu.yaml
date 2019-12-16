@@ -31,8 +31,10 @@ items:
                 title: 'Onze werkwijze'
                 nesting: '0'
                 type: static-page
+                url: ''
                 code: ''
                 reference: trainingen-onze-werkwijze
+                cmsPage: ''
                 replace: '0'
                 viewBag:
                     isHidden: '0'
@@ -45,6 +47,19 @@ items:
                 url: ''
                 code: ''
                 reference: trainingen-sales-training
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Leadership and Management Training'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: trainingen-service-and-hospitality-training
                 cmsPage: ''
                 replace: '0'
                 viewBag:
@@ -65,12 +80,12 @@ items:
                     cssClass: ''
                     isExternal: '0'
             -
-                title: 'Leadership and Management Training'
+                title: 'Onboarding Training'
                 nesting: '0'
                 type: static-page
                 url: ''
                 code: ''
-                reference: trainingen-service-and-hospitality-training
+                reference: trainingen-onboarding-training
                 cmsPage: ''
                 replace: '0'
                 viewBag:
@@ -85,6 +100,17 @@ items:
         code: ''
         reference: referenties
         cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Nieuws / Blog'
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: blogs
         replace: '0'
         viewBag:
             isHidden: '0'

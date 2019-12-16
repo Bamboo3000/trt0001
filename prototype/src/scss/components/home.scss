@@ -48,6 +48,10 @@
         padding: 40px;
         position: relative;
 
+        * {
+            z-index: 9;
+        }
+
         &:after {
             content: '';
             position: absolute;
@@ -60,6 +64,7 @@
             background-size: 50px;
             background-position: center center;
             opacity: 0.035;
+            z-index: 0;
         }
 
         @media(max-width: 1200px) {

@@ -3,9 +3,11 @@ static-pages:
     trainingen:
         trainingen-sales-training: {  }
         trainingen-brand-training: {  }
+        trainingen-onboarding-training: {  }
         trainingen-service-and-hospitality-training: {  }
         trainingen-e-learning: {  }
         trainingen-onze-werkwijze: {  }
     referenties: {  }
     contact: {  }
     instagram: {  }
+    blogs: {  }
