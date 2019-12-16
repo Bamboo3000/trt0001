@@ -50,7 +50,9 @@ forceUrl = 1
                     {{ fields.text|raw }}
                 </div>
             {% endif %}
-            {% component 'form' %}
+            {% if loop.last %}
+                {% component 'form' %}
+            {% endif %}
             </section>
         {% endif %}
 

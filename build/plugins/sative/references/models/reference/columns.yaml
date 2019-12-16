@@ -2,12 +2,19 @@ columns:
     id:
         label: id
         type: number
+        sortable: true
     summary:
         label: summary
         type: text
+        searchable: true
+        sortable: true
     author:
         label: author
         type: text
+        searchable: false
+        sortable: true
     featured:
         label: featured
         type: text
+        searchable: true
+        sortable: true

@@ -1,12 +1,12 @@
-list: $/sative/references/models/reference/columns.yaml
-modelClass: Sative\References\Models\Reference
 title: References
+modelClass: Sative\References\Models\Reference
+list: $/sative/references/models/reference/columns.yaml
+recordUrl: 'sative/references/references/update/:id'
 noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
 showSetup: true
 showCheckboxes: true
-recordsPerPage: 20
 toolbar:
     buttons: list_toolbar
     search:
         prompt: 'backend::lang.list.search_prompt'
-recordUrl: 'sative/references/references/update/:id'

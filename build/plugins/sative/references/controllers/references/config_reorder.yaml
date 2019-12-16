@@ -1,4 +1,5 @@
 title: References
 modelClass: Sative\References\Models\Reference
+nameFrom: author
 toolbar:
     buttons: reorder_toolbar

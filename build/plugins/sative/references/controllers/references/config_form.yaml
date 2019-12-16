@@ -1,6 +1,6 @@
 name: References
-form: $/sative/references/models/reference/fields.yaml
 modelClass: Sative\References\Models\Reference
+form: $/sative/references/models/reference/fields.yaml
 defaultRedirect: sative/references/references
 create:
     redirect: 'sative/references/references/update/:id'
@@ -8,3 +8,4 @@ create:
 update:
     redirect: sative/references/references
     redirectClose: sative/references/references
+preview: {  }
