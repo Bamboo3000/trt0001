@@ -7,13 +7,12 @@ use Flash;
 use Input;
 use Mail;
 use Validator;
+use Validation;
+use ValidationException;
 use \Anhskohbo\NoCaptcha\NoCaptcha;
 
 class Form extends ComponentBase
 {
-
-    protected $api_key = '6LddTMsUAAAAACwWnHqXO4ObJIXmvDbRjcZ8lG1o';
-    protected $api_secret = '6LddTMsUAAAAAOBAYkp2eeGyxDUhC5qgPm5nmamQ';
 
     public function componentDetails()
     {
@@ -47,7 +46,7 @@ class Form extends ComponentBase
         $rules = [
 			'name'	    => 'required|min:3',
 			'email'		=> 'required|email',
-			'g-recaptcha-response'  => 'required|captcha'
+			'g-recaptcha-response'  => 'required|captcha',
         ];
 
         $validator = Validator::make(Input::all(), $rules);

@@ -1,11 +1,20 @@
 {{ form_open({ enctype: 'multipart/form-data', method: 'POST', request: 'onFormSubmit',  }) }}
-    {% flash success %}
-        <p
-            data-control="flash-message"
-            class="flash-message fade info"
-            data-interval="30">
-            {{ 'Message sent!'|_ }}
-        </p>
+    {% flash %}
+        {% if type == 'success' %}
+            <p
+                data-control="flash-message"
+                class="flash-message fade info"
+                data-interval="30">
+                {{ 'Message sent!'|_ }}
+            </p>
+        {% else %}
+            <p
+                data-control="flash-message"
+                class="flash-message fade {{ type }}"
+                data-interval="30">
+                {{ message }}
+            </p>
+        {% endif %}
     {% endflash %}
     {{ form_token() }}
     {{ form_sessionKey() }}
@@ -33,6 +42,6 @@
     <div class="input-full">
         <label for="extra">{{ 'Message'|_ }} <span>*</span></label>
         <textarea required="required" class="message" name="extra" placeholder="{{ 'Ik kom graag in contact met Training Retail om mijn specifieke wensen te bespreken.'|_ }}"></textarea>
-        <input type="submit" value="{{ 'Send message'|_ }}" class="submit">
+        <input type="submit" class="submit" value="{{ 'Send message'|_ }}">
     </div>
 {{ form_close() }}
