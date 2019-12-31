@@ -27,6 +27,9 @@
         <input type="file" accept="application/pdf,application/msword,
         application/vnd.openxmlformats-officedocument.wordprocessingml.document" name="job_file" required="required" onchange="getFileName(this, 'job_file')">
     </div>#}
+    <div class="recaptcha-cont">
+        {{ appCaptcha|raw }}
+    </div>
     <div class="input-full">
         <label for="extra">{{ 'Message'|_ }} <span>*</span></label>
         <textarea required="required" class="message" name="extra" placeholder="{{ 'Ik kom graag in contact met Training Retail om mijn specifieke wensen te bespreken.'|_ }}"></textarea>

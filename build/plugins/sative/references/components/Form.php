@@ -6,9 +6,14 @@ use Session;
 use Flash;
 use Input;
 use Mail;
+use Validator;
+use \Anhskohbo\NoCaptcha\NoCaptcha;
 
 class Form extends ComponentBase
 {
+
+    protected $api_key = '6LddTMsUAAAAACwWnHqXO4ObJIXmvDbRjcZ8lG1o';
+    protected $api_secret = '6LddTMsUAAAAAOBAYkp2eeGyxDUhC5qgPm5nmamQ';
 
     public function componentDetails()
     {
@@ -16,6 +21,11 @@ class Form extends ComponentBase
             'name'        => 'Form Component',
             'description' => 'No description provided yet...'
         ];
+    }
+
+    public function onRun()
+    {
+        $this->page['appCaptcha'] = app('captcha')->display(['data-callback' => 'appCaptchaCallback']);
     }
 
     /*
@@ -32,31 +42,46 @@ class Form extends ComponentBase
             'phone'     => Input::get('phone'),
             'email'     => Input::get('email'),
             'extra'     => Input::get('extra')
-        ];  
+        ]; 
 
-        if(Session::token() === Input::get('_token')) {
+        $rules = [
+			'name'	    => 'required|min:3',
+			'email'		=> 'required|email',
+			'g-recaptcha-response'  => 'required|captcha'
+        ];
+
+        $validator = Validator::make(Input::all(), $rules);
+
+        if($validator->fails()){
+            $messages = $validator->messages();
+            foreach ($messages->all() as $message) {
+                Flash::error($message);
+            }
+		} else {
+
+            if(Session::token() === Input::get('_token')) {
             
-            Mail::send('sative.references::mail.message', $inputs, function($message){
-
-                $message->from('web@trainingretail.nl', 'Training Retail Website');
-                $message->to('info@trainingretail.nl', 'Admin');
-                $message->subject('Training Retail new message');
+                Mail::send('sative.references::mail.message', $inputs, function($message){
     
-            });
-    
-            Flash::success('job');
-    
-            return Redirect::back();
-            die();
-            
-        } else {
-
-            return Redirect::back();
-            die();
-
-        }
-
+                    $message->from('web@trainingretail.nl', 'Training Retail Website');
+                    $message->to('info@trainingretail.nl', 'Admin');
+                    $message->subject('Training Retail new message');
         
+                });
+        
+                Flash::success('job');
+        
+                return Redirect::back();
+                die();
+                
+            } else {
+    
+                return Redirect::back();
+                die();
+    
+            }
+
+        } 
 
     }
 
